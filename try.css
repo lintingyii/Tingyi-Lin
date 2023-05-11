@@ -1,0 +1,256 @@
+* {
+    margin:0%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 
+            Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+.nav {
+    background-color: white;
+    list-style-type: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    text-decoration: none;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    text-align: left;
+    border-radius: 50px;
+    margin: 0;
+    padding: 0;
+    z-index: 4;
+    width: 99.8%;
+}
+.nav li {
+    display: inline-block;
+    font-size: 20px;
+    padding: 7px;
+}
+.nav {
+    display: flex;
+}
+.nav {
+    position: sticky;
+    top: 0;
+}
+.home , .aboutme , .work-nav {
+    flex:1;
+}
+.aboutme {
+    text-align: center;
+}
+.work-nav {
+    text-align: right;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a:visited {
+    color: blue;
+}
+.big-title {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 135px;
+    font-weight: bold;
+    margin-bottom: 0;
+    display: inline-block;
+    margin-top: 150px;
+    margin-left: 450px;
+    white-space:nowrap;
+}
+
+.tingyi-title {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 135px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 340px;
+    margin-left: 450px;
+    white-space:nowrap;
+}
+
+.designer-title {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: blue;
+    margin-bottom: 20px;
+    margin-left: 120px;
+    display: block;
+    white-space:nowrap;
+}
+
+p.designer-title {
+    text-align: left;
+}
+
+@keyframes typing {
+    from { width: 0 }
+  }
+p.designer-title {
+    width: 485px;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 5s steps(50)
+  }
+@keyframes caret {
+    50% { border-color: transparent; }
+  }
+p.designer-title {
+    width: 485px;
+    border-right: .05em solid;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 5s steps(50),
+      caret 1s steps(1) infinite;
+}
+
+.whatido-title {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    white-space:pre-wrap;
+    margin-bottom: 20px;
+    display: inline-block;
+    margin-left: 100px;
+}
+
+p.whatido-title {
+    border-style: solid;
+    background-color: #ffffff;
+    border-radius: 50px;
+    border-width: 2px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+.work {
+    margin-top: 40px;
+    Position:relative;
+    left: 500px;
+    float: left;
+}
+
+.me {
+    width: 550px;
+    height: 550px;
+    object-fit: cover;
+    object-position: middle;
+    margin-left: 60px;
+    margin-top: 12px;
+    position: relative;
+}
+
+.selfie {
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border-radius: 150px;
+    object-fit: cover;
+    object-position: top;
+    border-style: solid;
+    border-width: 2px;
+    border-color: blue;
+    margin-top: 820px;
+    margin-left: 250px;
+    display: block;
+}
+
+/*讓圖片隨著畫面滾動移動*/ 
+.container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+.container {
+    position: relative;
+}
+/*把圖片重疊在文字上*/     
+.container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.container h1 {
+    position: relative;
+    z-index: 1;
+}
+.container h2 {
+    position: relative;
+    z-index: 1;
+}
+.container img {
+    z-index: 3;
+}
+
+.mail {
+    font-size: 34px;
+    color: white;
+    background-color: red;
+    border-style: solid;
+    border-width: 3px;
+    border-color: red;
+    border-radius: 35px;
+    margin-top: 180px;
+    margin-left: -60px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    cursor: pointer;
+    display: inline-block;
+    white-space:nowrap;
+}
+
+.ig {
+    font-size: 38px;
+    color: white;
+    background-color: red;
+    border-style: solid;
+    border-width: 3px;
+    border-color: red;
+    border-radius: 35px;
+    margin-left: 20px;
+    cursor: pointer;
+    display: inline-block;
+    white-space:nowrap;
+}
+
+.behance {
+    font-size: 31px;
+    color: white;
+    background-color: red;
+    border-style: solid;
+    border-width: 3px;
+    border-color: red;
+    border-radius: 35px;
+    padding-top: 8px;
+    padding-bottom: 2px;
+    margin-top: 2px;
+    margin-left: 20px;
+    cursor: pointer;
+    display: inline-block;
+    white-space:nowrap;    
+}
+
+.buttom-title {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    margin-top: 25px;
+    display: inline-block;
+    margin-left: 623px;
+    letter-spacing: -0.5px;
+    white-space:nowrap;
+}
+
+.slogan {
+    font-size: 30px;
+    display: block;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    color: blue;
+    border-color: white;
+    padding-top: 350px;
+    padding-bottom: 40px;
+    text-align: center;
+}

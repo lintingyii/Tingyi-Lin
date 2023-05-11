@@ -1,0 +1,187 @@
+/* ///younglions/// */
+*{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.younglions {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: larger;
+    text-align: center;
+    text-decoration: none;
+    white-space: pre-wrap;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 45px;
+    margin-top: 0.2%;
+    margin-bottom: .5%;
+    background-color: #D2EEF3;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    width: 100%;
+    cursor: pointer;
+    animation: load 400ms ease-in;
+}
+
+.younglions:after{
+  content:'VC Kungfu \A         A Lung-health check-up mobile app';
+  font-weight: bold;
+  line-height: 30px;
+  white-space: pre;
+}
+.younglions:hover:after{
+  content:'2023 坎城創意節青年競賽 台灣代表隊選拔賽 第四名 \A Cannes Lions Festival, Taiwan Representative Competition 4th place / Future Young Lions award';
+  white-space:pre-line;
+  text-align: center;
+  vertical-align: middle;
+  font-size: smaller;
+}
+.younglions {
+  transition-property: color, background-color;
+  transition-duration:0.1s;
+  transition-timing-function: ease-in-out;
+}
+
+.younglions:hover {
+  color: white;
+  background-color: #A6DEE8;
+  padding-bottom: 5%;
+}
+
+/* ///iprotist/// */
+
+.iprotist {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: larger;
+  text-align: center;
+  text-decoration: none;
+  white-space: pre-wrap;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  border-radius: 45px;
+  margin-top: 0.2%;
+  margin-bottom: .5%;
+  background-color: #A6DEE8;
+  padding-top: 2%;
+  padding-bottom: 5%;
+  width: 100%;
+  cursor: pointer;
+  animation: load 400ms ease-in forwards;
+  animation-delay: 400ms;
+  opacity: 0;
+}
+
+.iprotist:after{
+content:'iPROTiST \A         A first-ever Psychological Test Game designed for computer';
+font-weight: bold;
+line-height: 30px;
+white-space: pre;
+}
+.iprotist:hover:after{
+content:'如果人人都是單細胞生物...... \A 一款視覺體驗專為電腦瀏覽器打造的心理測驗小遊戲，透過有趣的測驗將人分為五種「單細胞生物」';
+white-space:pre-line;
+text-align: center;
+vertical-align: middle;
+font-size: smaller;
+line-height: 30px;
+}
+.iprotist {
+transition-property: color, background-color;
+transition-duration:0.1s;
+transition-timing-function: ease-in-out;
+}
+
+.iprotist:hover {
+color: white;
+background-color: #7CA6AE;
+padding-bottom: 5%;
+}
+
+/* generative-art */
+
+.generative {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: larger;
+  text-align: center;
+  text-decoration: none;
+  white-space: pre-wrap;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  border-radius: 45px;
+  margin-top: 0.2%;
+  margin-bottom: 1%;
+  background-color: #7CA6AE;
+  padding-top: 2%;
+  padding-bottom: 5%;
+  width: 100%;
+  cursor: pointer;
+  animation: load 400ms ease-in forwards;
+  animation-delay: 800ms;
+  opacity: 0;
+}
+
+.generative:after{
+content:'Generative Art \A         Made by p5.js';
+font-weight: bold;
+line-height: 30px;
+white-space: pre;
+}
+.generative:hover:after{
+content:'生成藝術 \A         使用工具：p5.js / Processing';
+white-space:pre-line;
+text-align: center;
+vertical-align: middle;
+font-size: smaller;
+line-height: 30px;
+white-space: pre;
+}
+.generative {
+transition-property: color, background-color;
+transition-duration:0.1s;
+transition-timing-function: ease-in-out;
+}
+
+.generative:hover {
+color: white;
+background-color: #398D9C;
+padding-bottom: 5%;
+}
+
+@keyframes load {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.back {
+  position: absolute;
+  right: .5%;
+  bottom: 4%;
+  padding: 5px 10px 5px 10px;
+  background-color: #f2f2f2;
+  border-radius: 50px;
+  border-style: solid;
+  border-width: 0px;
+  font-size: larger;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease-in-out, right 0.3s ease-in-out;;
+}
+
+.back:hover {
+  box-shadow: -2px -2px 5px #ffffff, 
+              3px 3px 5px#ceced1;
+  right: 2%;
+}
+

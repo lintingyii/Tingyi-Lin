@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ting-yi Lin</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="work.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.6.0/lib/p5.js"></script>
+    <script src="sketch.js"></script>
+    <link rel="icon" href="./picture/icon1.png" type="icon/png">
+</head>
+<body style="background-color: #f2f2f2;">
+    <ul class="nav">
+        <li class="home">
+          <a href="tingyilin.html">
+            <span style="font-weight: 700px; font-size: 30px"><strong>Home</strong></span></a>
+        </li>
+        <li class="aboutme">
+          <a href="cv.html">
+            <span style="font-weight: 700px; font-size: 30px"><strong>About me</strong></span></a>
+        </li>
+        <li class="work-nav">
+          <a href="work.html">
+            <span style="font-weight: 700px; font-size: 30px"><strong>Work</strong></span></a>
+        </li>
+    </ul>
+    <div class="work">
+    <h2>
+        Different categories of my work :
+    </h2>
+    <form>
+        <select onchange="openNewWindow(this);">
+        <option value="work.html">--please choose a category--</option>
+        <option value="https://contra.com/910620morgan_y8m7v5p7">Branding</option>
+        <option value="https://www.instagram.com/tingyiiilin/">Graphic Design</option>
+        <option value="art.html">Art & Illustration</option>
+        <option value="creativity-project.html">Creativity Project</option>
+        </select>
+        <script>
+            function openNewWindow(selectElement) {
+              var selectedValue = selectElement.value;
+              if (selectedValue.startsWith("http")) {
+                window.open(selectedValue, "_blank"); // 打开新窗口
+              } else {
+                window.location.href = selectedValue; // 在当前窗口加载
+              }
+            }
+        </script>
+    </form>
+        <div class="tooltip">
+        <img class="computer" src="picture/computer2.png">
+        <span class="tooltiptext">  I'm totally a design head !</span>
+        </div>
+    </div>
+    <p>
+        © TING-YI LIN • GRAPHIC DESIGNER
+    </p>
+</body>
+</html> 

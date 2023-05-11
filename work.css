@@ -1,0 +1,150 @@
+* {
+  margin: 0%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 
+        Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.nav {
+  background-color: white;
+  list-style-type: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-decoration: none;
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+  text-align: left;
+  border-radius: 50px;
+  margin: 0;
+  padding: 0;
+  z-index: 4;
+  width: 99.75%;
+}
+.nav li {
+  display: inline-block;
+  font-size: 20px;
+  padding: 7px;
+}
+.nav {
+  display: flex;
+}
+.nav {
+  position: sticky;
+  top: 0;
+}
+.home, .aboutme, .work-nav {
+  flex: 1;
+}
+.aboutme {
+  text-align: center;
+}
+.work-nav {
+  text-align: right;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:visited {
+  color: blue;
+}
+.work {
+    display: block;
+    position: relative;
+    align-items: center;
+}
+h2 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    width: 460px;
+      font-size: 30px;
+    font-weight: bolder;
+    /* margin-left: 35%; */
+    display: block;
+    margin: auto;
+    margin-top: 150px;
+    text-align: center;
+}
+select {
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+    /* margin-left: 35%; */
+    padding: 10px 10px ;
+    width: 450px;
+    font-size: larger;
+    color: blue;
+    border: solid;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 50px;
+    background-color: white;
+}
+.work img {
+    display: inline-block;
+    width: 250px;
+    margin-top: 60px;
+}
+@keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+.work img {
+    animation-name: bounce;
+    animation-duration: 0.9s;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear;
+    z-index: 1;
+}
+.tooltip {
+    margin-left: 41%;
+    position: relative;
+    display: inline-block;
+}
+.tooltiptext {
+    white-space: pre;
+    display: inline-block;
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 187px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    color: blue;
+    font-family: 'Caveat', cursive;
+    font-size: larger;
+    border-radius: 7px;
+    padding: 3px 0;
+    position: absolute;
+    z-index: 2;
+    top: 120px;
+    left: 95%;
+}
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent black transparent transparent;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+p {
+    display: block;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: smaller;
+}
